@@ -153,7 +153,7 @@ main #hebergements {
     border-radius: 15px;
 }
 
-main h3, aside h3 {
+main h3, aside h3, article h3 {
     width: 100%;
 }
 
@@ -258,13 +258,23 @@ aside .popular-host .rating {
 }
 
 #activites {
+    width: 100%;
+    margin-left: -50px;
     display: flex;
 }
 
-#activites h3 {
-    width: 100%;
+#activites .activity:first {
+    margin-left: -20px;
 }
 
-#activites .activity {
-    margin-top: 100px;
+#activites .activity img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+#activities .double img {
+    width: 1150px;
+    height: 250px;
 }
