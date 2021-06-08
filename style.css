@@ -141,11 +141,11 @@ section {
     display: flex;
 }
 
-article {
+main {
    flex: 2; 
 }
 
-article #hebergements {
+main #hebergements {
     padding: 30px 20px 40px 20px;
     display: flex;
     flex-wrap: wrap;
@@ -153,84 +153,118 @@ article #hebergements {
     border-radius: 15px;
 }
 
-article h3, aside h3 {
+main h3, aside h3 {
     width: 100%;
 }
 
-article #hebergements img {
+main #hebergements img {
     width: 230px;
     height: 100px;
+    object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
-article .host, aside .popular-host {
+main .host, aside .popular-host {
     padding: 5px 5px 10px 5px;
     background-color: white;
     border-radius: 20px;
     font-size: 10pt;
 }
 
-article .host {
+main .host {
     margin-right: 17px;
     margin-left: 10px;
 }
 
-article .host a, aside a {
+main .host a, aside a {
     text-decoration: none;
     color: black;
 }
 
-article .host figcaption, article .host p, article .host .rating {
+main .host figcaption, main .host p, main .host .rating {
     padding-left: 10px;
 }
 
-article .host figcaption, aside .popular-host figcaption {
+main .host figcaption, aside .popular-host figcaption {
     font-size: 12pt;
 }
 
-article .host p {
+main .host p {
     margin-top: 5px;
 }
 
-article .host .rating {
+main .host .rating {
     margin-top: -10px;
+}
+
+.rating {
+    color: var(--grey);
+}
+
+.rating .blue {
+    color: var(--blue);
 }
 
 aside #most-popular-host {
     width: 100%;
     padding-top: 30px;
     padding-left: 20px;
-    padding-bottom: 3px;
+    padding-bottom: 1px;
     margin-left: 30px;
     flex: 1;
     background-color: var(--grey);
     border-radius: 15px;
 }
-
+aside h3 i {
+    margin-left: 120px;
+}
 aside #most-popular-host .popular-host {
     width: 300px;
     margin-left: 20px;
     margin-right: -10px;
     margin-bottom: 30px;
-    padding-bottom: 2px;
+    padding-bottom: 5px;
 }
 
 aside #most-popular-host .popular-host img {
     width: 100px;
     height: 110px;
+    margin-right: 20px;
+    object-fit: cover;
     border-radius: 20px 0 0 20px;
 }
 
-aside #most-popular-host .popular-host .desc {
-    float: right;
-    padding-top: 10px;
-    padding-right: 15px;
+aside figure {
+    display: flex;
 }
 
-aside .popular-host p {
-    margin-top: 5px;
+aside .popular-host figcaption {
+    margin-right: 30px;
+}
+
+aside .popular-host figcaption .host-title {
+    margin-top: 10px;
+    font-size: 11pt;
+}
+
+aside .popular-host .price {
+    margin-top: -10px;
+    font-size: 10pt;
 }
 
 aside .popular-host .rating {
-    margin-top: 30px;
+    margin-top: 20px;
+    font-size: 9pt;
+}
+
+#activites {
+    display: flex;
+}
+
+#activites h3 {
+    width: 100%;
+}
+
+#activites .activity {
+    margin-top: 100px;
 }
