@@ -176,7 +176,7 @@ main .host {
     margin-left: 10px;
 }
 
-main .host a, aside a {
+main .host a, aside a, .activity a {
     text-decoration: none;
     color: black;
 }
@@ -267,14 +267,44 @@ aside .popular-host .rating {
     margin-left: -20px;
 }
 
+#activites img {
+    object-fit: cover;
+}
+
 #activites .activity img {
     width: 250px;
-    height: 350px;
+    height: 325px; /* 350 */
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
-#activities .double img {
-    width: 1150px;
-    height: 250px;
+#activites .double figure {
+    margin-bottom: 30px;
+}
+
+#activites .double #pomegues {
+    height: 150px;
+}
+
+#activites .double #frioul {
+    height: 100px;
+}
+
+#activites .double #notre-dame, #activites .double #longchamp {
+    height: 130px;
+}
+
+.activity figcaption {
+    padding: 10px;
+    background-color: white;
+    font-size: 10pt;
+    box-shadow: 10px 5px 5px var(--grey);
+    border-radius: 0 0 20px 20px;
+}
+
+footer {
+    padding: 20px;
+    background-color: var(--grey);
+    display: flex;
+    justify-content: space-around;
 }
