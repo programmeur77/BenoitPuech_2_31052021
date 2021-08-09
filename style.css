@@ -10,7 +10,7 @@
 body {
     width: 90%;
     margin: auto;
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--font);
 }
 
 header {
@@ -66,6 +66,10 @@ nav a:hover, nav a:focus {
     margin-top: 3px;
 }
 
+#search .fa-search {
+    display: none;
+}
+
 #search #search-input {
     padding: 16px;
     margin-top: 3px;
@@ -103,6 +107,7 @@ nav a:hover, nav a:focus {
 }
 
 #filters ul li {
+    height: 40px;
     list-style-type: none;
     padding-right: 20px;
     padding-left: -50px;
@@ -114,7 +119,8 @@ nav a:hover, nav a:focus {
 }
 
 #filters i {
-    padding: 13px;
+    padding: 15px;
+    margin-top: -4px;
     margin-right: 10px;
     margin-left: -15px;
     color: var(--blue);
@@ -270,12 +276,12 @@ aside .popular-host .rating {
 }
 
 #activites .activity {
-    margin-left: 32px;
+    margin-left: 5px;
 }
 
 #activites .activity img {
-    width: 250px;
-    height: 325px;
+    width: 270px;
+    height: 350px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
@@ -300,20 +306,307 @@ aside .popular-host .rating {
     padding: 10px;
     background-color: white;
     font-size: 10pt;
-    box-shadow: 10px 5px 5px var(--grey);
+    box-shadow: 0px 5px 5px var(--grey);
     border-radius: 0 0 20px 20px;
 }
 
 footer {
-    padding: 20px;
+    width: 100%;
+    padding: 30px;
     margin-right: 40px;
     background-color: var(--grey);
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 footer ul li {
     margin-left: -40px;
     padding-top: 10px;
     font-size: 10pt;
+}
+
+footer div {
+    margin-right: 200px;
+}
+
+@media all and (max-device-width: 380px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+    }
+
+    header img {
+        width: 75px;
+        height: 35px;
+        margin-left: 20px;
+    }
+
+    header nav {
+        font-size: 6pt;
+        align-self: center;
+        align-items: flex-start;
+        margin-right: 500px;
+    }
+
+    header nav .blue {
+        color: var(--blue);
+    }
+
+    header nav ul li {
+        margin-right: 10px;
+    }
+
+    section {
+        width: 80%;
+    }
+
+    #sub-title h1 {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 14pt;
+    }
+
+    #sub-title p {
+        font-size: 9pt;
+        margin-left: 20px;
+    }
+
+    #search {
+        width: 80%;
+        margin-left: 20px;
+        margin-top: 5px;
+        margin-right: 20px;
+    }
+
+    #search i {
+        font-size: 10pt;
+        padding: 15px;
+        margin-top: 3px;
+    }
+
+    #search .fa-search {
+        display: inline;
+        margin-left: -10px;
+        padding: 15px;
+        padding-top: 15px;
+        font-size: 10pt;
+        background-color: var(--blue);
+        border-radius: 10px 10px 10px 10px;
+        color: white;
+    }
+
+    #search #search-input {
+        width: 150px;
+        padding: 12px;
+        margin-right: 0px;
+        border: 2px solid var(--grey);
+        border-radius: 0;
+    }
+
+    #search #search-input::placeholder {
+        margin-top: 30px;
+        font-size: 10pt;
+    }
+
+    #search #submit {
+        display: none;
+    }
+
+    #filters {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #filters h4 {
+        margin-left: 20px;
+        margin-bottom: 0px;
+        font-size: 13px;
+    }
+
+    #filters ul {
+        width: 100%;
+        margin-left: -20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+   #filters ul .two {
+        display: flex;
+        align-items: center;
+    }
+
+    #filters ul .two li {
+        width: 100px;
+    }
+
+    #filters ul .two li:last-child {
+        margin-left: -10px;
+    }
+
+    #filters ul li {
+        height: 30px;
+        margin-bottom: 10px;
+        padding-right: 10px;
+    }
+
+    #filters ul li .list-item {
+        font-size: 8pt;
+    }
+
+    #filters i {
+        padding: 13px;
+        font-size: 9pt;
+    }
+
+    .info {
+        margin-top: -10px;
+        font-size: 9pt;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .info i {
+        margin-right: 5px;
+        padding: 7px;
+        padding-left: 9px;
+        padding-right: 9px;
+        font-size: 7pt;
+    }
+
+    main {
+        margin-bottom: 0px;
+    }
+
+    section, #hebergements {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main #hebergements {
+        width: 100%;
+        margin: auto;
+        margin-top: -10px;
+        padding-top: 0px;
+        background-color: white;
+    }
+
+    main #hebergements h3, aside h3, article h3 {
+        margin-bottom: 5px;
+        margin-left: 5px;
+        font-size: 12pt;
+    }
+
+    main #hebergements img, article #activites .activity img, article #activites .activity #pomegues,
+    article #activites .activity #notre-dame, article #activites .activity #longchamp {
+        width: 80%;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    main #hebergements .host {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 3px;
+    }
+
+    main .host figcaption, aside #most-popular-host .popular-host figcaption .host-title, 
+    article #activites .activity .activity-name {
+        display: flex;
+        flex-direction: column;
+        font-size: 9pt;
+        align-items: left;
+    }
+
+    main .host, main p, main .rating, aside .popular-host figcaption .price, aside .popular-host figcaption .rating {
+        font-size: 7pt;
+    }
+
+    aside {
+        margin-top: -10px;
+    }
+
+    aside #most-popular-host {
+        margin-left: 0px;
+        border-radius: 0;
+    }
+
+    aside #most-popular-host h3 {
+        margin-top: 0px;
+    }
+
+    aside #most-popular-host h3 i {
+        margin-left: 80px;
+    }
+
+    aside #most-popular-host .popular-host {
+        width: 230px;
+        margin-left: 6px;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+
+    }
+
+    aside .popular-host figcaption {
+        align-self: baseline;
+    }
+
+    aside #most-popular-host .popular-host figcaption .host-title {
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-bottom: 15px;
+    }
+
+    aside .popular-host figcaption .price, aside .popular-host figcaption .rating {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    aside #most-popular-host .popular-host figcaption .host-title .break {
+        font-size: 8pt;
+    }
+
+    aside .popular-host figcaption .rating {
+        margin-top: 40px;
+    }
+
+    article #activites {
+        flex-direction: column;
+    }
+
+    article #activites .activity {
+        margin-left: 20px;
+        margin-right: 35px;
+        margin-bottom: 5px;
+    }
+
+    article #activites .activity img, article #activites .activity #pomegues, article #activites .activity #notre-dame, 
+    article #activites .activity #longchamp {
+        width: 100%;
+    }
+
+    footer {
+        width: 61%;
+        margin-top: 30px;
+        padding-bottom: 5px;
+        flex-direction: column-reverse;
+    }
+
+    footer h4 {
+        width: 200px;
+        font-size: 10pt;
+        margin-bottom: 3px;
+    }
+
+    footer ul {
+        margin-top: 5px;
+    }
+
+    footer ul li {
+        width: 200px;
+        font-size: 7pt;
+    }
 }
