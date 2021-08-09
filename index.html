@@ -2,9 +2,10 @@
 <html lang="fr-FR">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Reservia | Réservez votre hébergement pour des vacances de rêve</title>
-        <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <header>
@@ -16,7 +17,7 @@
                 <ul>
                     <li><a href="#hebergements" title="Hébergements">Hebergements</a></li>
                     <li><a href="#activites" title="Activités">Activités</a></li>
-                    <li><a href="#" title="S'inscrire">S'inscrire</a></li>
+                    <li><a href="#" title="S'inscrire" class="blue">S'inscrire</a></li>
                 </ul>
             </nav>
         </header>
@@ -33,19 +34,24 @@
                         <input type="text" name="search" id="search-input" placeholder="Marseille, France" />
                         <input type="submit" value="Rechercher" name="submit-search" id="submit" />
                     </form>
+                    <i class="fas fa-search search"></i>
                 </div>
 
                 <div id="filters">
                     <h4>Filtres</h4>
                     <ul>
-                        <li><i class="fas fa-money-bill-wave"></i>Économique</li>
-                        <li><i class="fas fa-child"></i>Familial</li>
-                        <li><i class="fas fa-heart"></i>Romantique</li>
-                        <li><i class="fas fa-dog"></i>Animaux autorisés</li>
+                        <div class="two">
+                            <li><i class="fas fa-money-bill-wave"></i><span class="list-item">Économique</span></li>
+                            <li><i class="fas fa-child"></i><span class="list-item">Familial</span></li>
+                        </div>
+                        <li><i class="fas fa-heart"></i><span class="list-item">Romantique</span></li>
+                        <li><i class="fas fa-dog"></i><span class="list-item last">Animaux autorisés</span></li>
                     </ul>
                 </div>
 
-                <p class="info"><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+                <p class="info">
+                    <i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville
+                </p>
             </article>
         </section>
 
@@ -169,7 +175,7 @@
                         <figure class="popular-host">
                             <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau chambres d'hôtes" />
                             <figcaption>
-                                <p class="host-title">Au coeur l'eau <br />Chambres d'hôtes</p>
+                                <p class="host-title">Au coeur l'eau <br /><span class="break">Chambres d'hôtes</span></p>
                                 <p class="price">Nuit à partir de 71€</p>
                                 <div class="rating">
                                     <i class="fas fa-star blue"></i>
@@ -250,8 +256,8 @@
                                     <figcaption class="activity-name">Parc Longchamp</figcaption>
                                 </a>
                             </figure>
+                        </div>
                     </div>
-                </div>
             </article>
         </section>
         
