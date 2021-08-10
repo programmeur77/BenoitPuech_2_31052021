@@ -15,6 +15,7 @@ body {
 
 header {
     height: 100px;
+    margin-bottom: -50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,6 +28,10 @@ header img {
 
 header nav {
     font-size: 11pt;
+}
+
+header nav .blue {
+    color: var(--blue);
 }
 
 header nav ul {
@@ -47,6 +52,10 @@ nav a:hover, nav a:focus {
     border-top: 1px solid var(--blue);
     padding-top: 30px;
     color: var(--blue);
+}
+
+#sub-title {
+    margin-top: 0px;
 }
 
 #sub-title p {
@@ -98,16 +107,23 @@ nav a:hover, nav a:focus {
 
 #filters {
     display: flex;
-    align-items: center;
     margin-top: 10px;
+}
+
+#filters h4 {
+    align-self: center;
 }
 
 #filters ul {
     display: flex;
 }
 
+#filters ul .two {
+    display: flex;
+}
+
 #filters ul li {
-    height: 40px;
+    height: 36px;
     list-style-type: none;
     padding-right: 20px;
     padding-left: -50px;
@@ -136,6 +152,8 @@ nav a:hover, nav a:focus {
 
 .info i {
     padding: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
     color: var(--blue);
     font-size: 8pt;
     border: 2px solid var(--grey);
@@ -160,6 +178,10 @@ main #hebergements {
     border-radius: 15px;
 }
 
+main h3, main #more {
+    margin-left: 15px;
+}
+
 main h3, aside h3, article h3 {
     width: 100%;
 }
@@ -175,6 +197,7 @@ main .host, aside .popular-host {
     padding: 5px 5px 10px 5px;
     background-color: white;
     border-radius: 20px;
+    box-shadow: 0px 5px 5px silver;
     font-size: 10pt;
 }
 
@@ -216,13 +239,18 @@ aside #most-popular-host {
     width: 100%;
     padding-top: 30px;
     padding-left: 20px;
-    padding-bottom: 1px;
+    padding-bottom: 36px;
     margin-left: -60px;
     margin-right: 60px;
     flex: 1;
     background-color: var(--grey);
     border-radius: 15px;
 }
+
+aside h3 {
+    margin-bottom: 30px;
+}
+
 aside h3 i {
     margin-left: 120px;
 }
@@ -266,6 +294,14 @@ aside .popular-host .rating {
     font-size: 9pt;
 }
 
+section {
+    margin-top: 30px;
+}
+
+section h3 {
+    margin-bottom: 0;
+}
+
 #activites {
     width: 100%;
     display: flex;
@@ -276,18 +312,19 @@ aside .popular-host .rating {
 }
 
 #activites .activity {
-    margin-left: 5px;
+    margin-left: 0px;
+    margin-right: 40px;
 }
 
 #activites .activity img {
-    width: 270px;
-    height: 350px;
+    width: 284px;
+    height: 330px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
 #activites .double figure {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 #activites .double #pomegues {
@@ -299,7 +336,7 @@ aside .popular-host .rating {
 }
 
 #activites .double #notre-dame, #activites .double #longchamp {
-    height: 130px;
+    height: 125px;
 }
 
 .activity figcaption {
@@ -311,12 +348,17 @@ aside .popular-host .rating {
 }
 
 footer {
-    width: 100%;
+    width: 1395px;
     padding: 30px;
     margin-right: 40px;
+    margin-left: -70px;
     background-color: var(--grey);
     display: flex;
     justify-content: flex-start;
+}
+
+footer h4, footer ul {
+    margin-left: 50px;
 }
 
 footer ul li {
@@ -347,12 +389,11 @@ footer div {
     header nav {
         font-size: 6pt;
         align-self: center;
-        align-items: flex-start;
         margin-right: 500px;
     }
 
-    header nav .blue {
-        color: var(--blue);
+    header nav ul {
+        display: flex;
     }
 
     header nav ul li {
@@ -463,7 +504,7 @@ footer div {
     }
 
     .info {
-        margin-top: -10px;
+        margin-top: -5px;
         font-size: 9pt;
         margin-left: 20px;
         margin-right: 20px;
@@ -494,23 +535,29 @@ footer div {
         background-color: white;
     }
 
-    main #hebergements h3, aside h3, article h3 {
+    main #hebergements h3, aside h3, aside #most-popular-host h3 i, article h3 {
         margin-bottom: 5px;
         margin-left: 5px;
         font-size: 12pt;
     }
 
+
     main #hebergements img, article #activites .activity img, article #activites .activity #pomegues,
     article #activites .activity #notre-dame, article #activites .activity #longchamp {
-        width: 80%;
+        width: 100%;
         height: 100px;
         object-fit: cover;
     }
 
     main #hebergements .host {
-        width: 100%;
+        width: 79%;
         margin-left: 0px;
         margin-bottom: 3px;
+    }
+
+    main #hebergements .host .host-title {
+        padding-top: 5px;
+        margin-bottom: -5px;
     }
 
     main .host figcaption, aside #most-popular-host .popular-host figcaption .host-title, 
@@ -522,10 +569,17 @@ footer div {
     }
 
     main .host, main p, main .rating, aside .popular-host figcaption .price, aside .popular-host figcaption .rating {
+        padding-top: 5px;
         font-size: 7pt;
     }
 
+    main #more {
+        margin-top: 20px;
+        font-size: 9pt;
+    }
+
     aside {
+        width: 91%;
         margin-top: -10px;
     }
 
@@ -539,12 +593,12 @@ footer div {
     }
 
     aside #most-popular-host h3 i {
-        margin-left: 80px;
+        margin-left: 75px;
     }
 
     aside #most-popular-host .popular-host {
-        width: 230px;
-        margin-left: 6px;
+        width: 237px;
+        margin-left: 0px;
         margin-bottom: 10px;
         padding-bottom: 5px;
 
@@ -577,6 +631,10 @@ footer div {
         flex-direction: column;
     }
 
+    article h3 {
+        margin-left: 20px;
+    }
+
     article #activites .activity {
         margin-left: 20px;
         margin-right: 35px;
@@ -588,8 +646,12 @@ footer div {
         width: 100%;
     }
 
+    article #activites .activity .activity-name {
+        font-size: 8pt;
+    }
+
     footer {
-        width: 61%;
+        width: 79.6%;
         margin-top: 30px;
         padding-bottom: 5px;
         flex-direction: column-reverse;
@@ -597,8 +659,8 @@ footer div {
 
     footer h4 {
         width: 200px;
-        font-size: 10pt;
         margin-bottom: 3px;
+        font-size: 10pt;
     }
 
     footer ul {
@@ -608,5 +670,9 @@ footer div {
     footer ul li {
         width: 200px;
         font-size: 7pt;
+    }
+
+    footer div {
+        margin-left: 20px;
     }
 }
