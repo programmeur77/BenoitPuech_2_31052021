@@ -647,7 +647,7 @@ footer div {
         width: 80%;
         margin-top: 5px;
         margin-left: -10px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         padding-right: 20px;
         font-size: 14pt;
     }
@@ -665,7 +665,7 @@ footer div {
     }
 
     aside .popular-host figcaption .rating {
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     article #activites {
