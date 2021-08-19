@@ -23,7 +23,7 @@ header {
 
 header img {
     width: 100px;
-    height: 40px;
+    height: 30px;
 }
 
 header nav {
@@ -172,7 +172,7 @@ section {
 }
 
 main {
-   flex: 2; 
+flex: 2; 
 } 
 
 main #hebergements {
@@ -403,7 +403,7 @@ footer div {
 
     header img {
         width: 100px;
-        height: 60px;
+        height: 45px;
         margin-left: 5px;
     }
 
@@ -446,9 +446,8 @@ footer div {
 
     #search {
         width: 100%;
-        margin-left: 20px;
+        margin-left: 10px;
         margin-top: 5px;
-        justify-content: center;
     }
 
     #search .fa-map-marker-alt, #search .fa-search {
@@ -472,7 +471,7 @@ footer div {
     }
 
     #search #search-input {
-        width: 270px;
+        width: 190px;
         padding: 20px;
         margin-right: 0px;
         border: 2px solid var(--grey);
@@ -569,12 +568,12 @@ footer div {
     main #hebergements img, article #activites .activity img, article #activites .activity #pomegues,
     article #activites .activity #notre-dame, article #activites .activity #longchamp {
         width: 100%;
-        height: 120px;
+        height: 110px;
         object-fit: cover;
     }
 
     main #hebergements .host {
-        width: 100%;
+        width: 95%;
         margin-left: -10px;
         margin-right: 10px;
         margin-bottom: 5px;
@@ -609,7 +608,7 @@ footer div {
     }
 
     aside {
-        width: 120%;
+        width: 106%;
         margin-top: -20px;
         margin-left: -20px;
     }
@@ -626,11 +625,11 @@ footer div {
     }
 
     aside #most-popular-host h3 i {
-        margin-left: 160px;
+        margin-left: 290px;
     }
 
     aside #most-popular-host .popular-host {
-        width: 85%;
+        width: 90%;
         margin-left: 7px;
         margin-bottom: 10px;
         padding-bottom: 5px;
@@ -644,11 +643,12 @@ footer div {
     }
 
     aside #most-popular-host .popular-host figcaption h5 {
-        width: 130%;
-        font-size: 14pt;
+        width: 80%;
         margin-top: 5px;
         margin-left: -10px;
         margin-bottom: 20px;
+        padding-right: 20px;
+        font-size: 14pt;
     }
 
     aside .popular-host figcaption .price, aside .popular-host .rating {
@@ -667,7 +667,7 @@ footer div {
     }
 
     article #activites {
-        width: 100%;
+        width: 95%;
         flex-direction: column;
         justify-content: center;
     }
@@ -691,7 +691,7 @@ footer div {
     }
 
     article #activites .activity figcaption {
-        width: 95%;
+        width: 93%;
         padding: 15px;
     }
 
@@ -700,7 +700,7 @@ footer div {
     }
 
     footer {
-        width: 115.5%;
+        width: 109%;
         margin-top: 30px;
         padding-bottom: 5px;
         flex-direction: column-reverse;
