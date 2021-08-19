@@ -661,6 +661,7 @@ footer div {
 
     aside #most-popular-host .popular-host figcaption .host-title .break {
         font-size: 12pt;
+        width: 100%;
     }
 
     aside .popular-host figcaption .rating {
