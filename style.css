@@ -471,7 +471,7 @@ footer div {
     }
 
     #search #search-input {
-        width: 190px;
+        width: 195px;
         padding: 20px;
         margin-right: 0px;
         border: 2px solid var(--grey);
@@ -543,7 +543,7 @@ footer div {
     }
 
     main {
-        width: 100%;
+        width: 90%;
         justify-content: center;
     }
 
@@ -573,7 +573,7 @@ footer div {
     }
 
     main #hebergements .host {
-        width: 95%;
+        width: 100%;
         margin-left: -10px;
         margin-right: 10px;
         margin-bottom: 5px;
@@ -608,7 +608,7 @@ footer div {
     }
 
     aside {
-        width: 106%;
+        width: 100%;
         margin-top: -20px;
         margin-left: -20px;
     }
@@ -667,7 +667,7 @@ footer div {
     }
 
     article #activites {
-        width: 95%;
+        width: 90%;
         flex-direction: column;
         justify-content: center;
     }
@@ -700,7 +700,7 @@ footer div {
     }
 
     footer {
-        width: 109%;
+        width: 100%;
         margin-top: 30px;
         padding-bottom: 5px;
         flex-direction: column-reverse;
