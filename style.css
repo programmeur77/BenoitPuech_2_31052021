@@ -390,7 +390,7 @@ footer div {
 
 @media all and (min-width: 320px) and (max-width: 430px) {
     body {
-        max-width: 430px;
+        width: 100%;
         margin-left: 10px;
         font-size: 12pt;
     }
@@ -398,17 +398,18 @@ footer div {
     header {
         min-width: 100%;
         display: flex;
+        justify-content: end;
     }
 
     header img {
-        max-width: 80px;
-        max-height: 65px;
+        width: 100px;
+        height: 60px;
         margin-left: 5px;
     }
 
     header nav {
         min-width: 320px;
-        font-size: 9pt;
+        font-size: 12pt;
         flex-wrap: wrap;
     }
 
@@ -420,44 +421,50 @@ footer div {
         margin-right: 5px;
     }
 
+    #sub-title  {
+        justify-content: center;
+    }
+
     #sub-title h2 {
         margin-bottom: 0px;
     }
 
 
-    #sub-title h2, #sub-title p {
-        width: 75%;
+    #sub-title h2 {
+        width: 80%;
         margin-left: 10px;
-        font-size: 12pt;
+        font-size: 14pt;
 
     }
 
     #sub-title p {
-        width: 80%;
+        width: 100%;
+        margin-left: 10px;
         margin-top: 10px;
-        font-size: 10pt;
+        font-size: 12pt;
     }
 
     #search {
         width: 100%;
-        margin-left: 10px;
+        margin-left: 20px;
         margin-top: 5px;
+        justify-content: center;
     }
 
     #search .fa-map-marker-alt, #search .fa-search {
-        font-size: 10pt;
+        font-size: 12pt;
     }
 
     #search .fa-map-marker-alt {
-        padding: 12px;
-        padding-top: 15px;
+        padding: 20px;
+        padding-top: 20px;
     }
 
     #search .fa-search {
         display: inline;
         margin-left: -30px;
         margin-top: 1px;
-        padding: 15px;
+        padding: 20px;
         padding-bottom: 12px;
         background-color: var(--blue);
         border-radius: 15px;
@@ -465,15 +472,15 @@ footer div {
     }
 
     #search #search-input {
-        width: 180px;
-        padding: 11px;
+        width: 280px;
+        padding: 20px;
         margin-right: 0px;
         border: 2px solid var(--grey);
         border-radius: 0;
     }
 
     #search #search-input::placeholder {
-        font-size: 8pt;
+        font-size: 12pt;
         padding-left: 5px;
     }
 
@@ -489,38 +496,38 @@ footer div {
 
     #filters h4 {
         margin-bottom: 20px;
-        font-size: 12pt;
+        font-size: 14pt;
     }
 
     #filters ul {
         margin-top: -10px;
-        margin-left: -20px;
+        margin-left: -30px;
         flex-wrap: wrap;
     }
 
     #filters ul li {
         width: fit-content;
         margin-bottom: 10px;
-        margin-left: -5px;
-        font-size: 10pt;
-        padding-right: 10px;
+        margin-right: 13px;
+        padding-right: 20px;
+        padding-bottom: 5px;
+        font-size: 14pt;
     }
 
     #filters i {
-        padding: 13px;
-        font-size: 12pt;
-        margin-top: -3.5px;
-        margin-right: 5px;
+        padding: 15px;
+        font-size: 14pt;
+        margin-right: 10px;
+        margin-bottom: 10px;
     }
 
     .info {
-        min-width: 320px;
-        max-width: 100%;
+        width: 100%;
         margin-top: -5px;
         margin-left: 10px;
-        margin-right: 10px;
+        margin-right: 5px;
+        margin-bottom: 0px;
         font-size: 12pt;
-        flex-wrap: wrap;
     }
 
     .info i {
@@ -528,18 +535,22 @@ footer div {
         padding: 5px;
         padding-left: 10px;
         padding-right: 10px;
-        font-size: 10pt;
+        font-size: 12pt;
     }
 
     section, #hebergements {
         width: 100%;
         flex-direction: column;
+    }
+
+    main {
+        width: 100%;
         justify-content: center;
     }
 
     main #hebergements {
-        margin-left: -20px;
-        margin-top: -30px;
+        margin-bottom: 0px;
+        margin-top: -20px;
         padding-top: 0px;
         background-color: white;
     }
@@ -547,20 +558,24 @@ footer div {
     main #hebergements h3, aside h3, aside #most-popular-host h3 i, article h3 {
         margin-bottom: 5px;
         margin-left: 10px;
-        font-size: 12pt;
+        font-size: 14pt;
+    }
+
+    main #hebergements h3 {
+        margin-left: -10px;
     }
 
 
     main #hebergements img, article #activites .activity img, article #activites .activity #pomegues,
     article #activites .activity #notre-dame, article #activites .activity #longchamp {
-        width: 250px;
-        height: 85px;
+        width: 100%;
+        height: 120px;
         object-fit: cover;
     }
 
     main #hebergements .host {
-        width: 76%;
-        margin-left: 10px;
+        width: 100%;
+        margin-left: -10px;
         margin-right: 10px;
         margin-bottom: 5px;
         justify-content: center;
@@ -575,7 +590,7 @@ footer div {
         margin-left: 0px;
         margin-bottom: 5px;
         padding-top: 5px;
-        font-size: 13pt;
+        font-size: 14pt;
     }
 
     main .host, main .price, aside .popular-host figcaption .price {
@@ -594,13 +609,13 @@ footer div {
     }
 
     aside {
-        width: 100%;
-        margin-top: -10px;
-        margin-left: -30px;
+        width: 120%;
+        margin-top: -20px;
+        margin-left: -20px;
     }
 
     aside #most-popular-host {
-        margin-left: 5px;
+        margin-left: 0px;
         border-radius: 0;
     }
 
@@ -611,11 +626,11 @@ footer div {
     }
 
     aside #most-popular-host h3 i {
-        margin-left: 60px;
+        margin-left: 160px;
     }
 
     aside #most-popular-host .popular-host {
-        width: 80%;
+        width: 85%;
         margin-left: 7px;
         margin-bottom: 10px;
         padding-bottom: 5px;
@@ -624,35 +639,37 @@ footer div {
 
     aside #most-popular-host .popular-host img {
         width: 35%;
-        height: 110px;
+        height: 140px;
         margin-right: 20px;
     }
 
     aside #most-popular-host .popular-host figcaption h5 {
         width: 130%;
-        font-size: 13pt;
+        font-size: 14pt;
         margin-top: 5px;
         margin-left: -10px;
-        margin-bottom: 5px;
+        margin-bottom: 20px;
     }
 
     aside .popular-host figcaption .price, aside .popular-host .rating {
-        width: 100%;
+        width: 200px;
         margin-left: -10px;
         margin-right: -10px;
-        font-size: 10pt;
+        font-size: 12pt;
     }
 
     aside #most-popular-host .popular-host figcaption .host-title .break {
-        font-size: 10pt;
+        font-size: 12pt;
     }
 
     aside .popular-host figcaption .rating {
-        margin-top: 22px;
+        margin-top: 30px;
     }
 
     article #activites {
+        width: 100%;
         flex-direction: column;
+        justify-content: center;
     }
 
     article h3 {
@@ -661,7 +678,7 @@ footer div {
     }
 
     article #activites .activity {
-        width: 90%;
+        width: 100%;
         margin-left: 10px;
         margin-right: 35px;
         margin-bottom: 5px;
@@ -669,12 +686,12 @@ footer div {
 
     article #activites .activity img, article #activites .activity #pomegues, article #activites .activity #notre-dame, 
     article #activites .activity #frioul, article #activites .activity #longchamp {
-        width: 90%;
-        height: 120px;
+        width: 103%;
+        height: 150px;
     }
 
     article #activites .activity figcaption {
-        width: 80%;
+        width: 95%;
         padding: 15px;
     }
 
@@ -683,7 +700,7 @@ footer div {
     }
 
     footer {
-        width: 100%;
+        width: 116%;
         margin-top: 30px;
         padding-bottom: 5px;
         flex-direction: column-reverse;
@@ -709,254 +726,8 @@ footer div {
     }
 }
 
-/*@media all and (max-device-width: 320px) {
-    #sub-title h2, #sub-title p {
-        min-width: 300px;
-        margin-left: 20px;
-        font-size: 16pt;
-    }
-
-    #sub-title p {
-        margin-top: 5px;
-        font-size: 12pt;
-    }
-
-    aside {
-        width: 505px;
-    }
-
-    footer {
-        width: 505px;
-    }
-}*/
-
-@media all and (min-device-width: 431px) and (max-device-width: 800px) {
+@media all and (min-width: 431px) and (max-width: 600px) {
     body {
-        /*width: 90%;*/
-        width: 780px;
-        margin: auto;
-        font-size: 12pt;
+        font-size: 1990pt;
     }
-
-    header {
-        min-width: 100%;
-        font-size: 14pt;
-    }
-
-    header img, section #sub-title, section #search, 
-    section #filters, section .info {
-        margin-left: 50px;
-    }
-
-    header img {
-        width: 200px;
-        height: 100px;
-        margin-top: 30px;
-    }
-
-    header nav, section #search i, section #filters h4 {
-        font-size: 20pt;
-    }
-
-    header nav {
-        margin-top: 30px;
-        margin-left: 590px;
-        align-self: center;
-    }
-
-    section {
-        width: 100%;
-    }
-
-    section #sub-title {
-        width: 1439px;
-        margin-top: 80px;
-    }
-
-    section #sub-title h2 {
-        font-size: 25pt;
-    }
-
-    section #sub-title p {
-        font-size: 23pt;
-    }
-
-    section #search i {
-        padding: 30px;
-    }
-
-    section #search #search-input {
-        width: 500px;
-        padding: 35px;
-    }
-
-    section #search #search-input::placeholder {
-        font-size: 30px;
-    }
-
-    section #search #submit {
-        margin-bottom: -3px;
-        padding: 35px;
-        padding-top: 25px;
-        padding-bottom: 34px;
-        font-size: 25px;
-    }
-
-    section #filters {
-        margin-top: 30px;
-    }
-
-    section #filters h4 {
-        margin-right: 10px;
-    }
-
-    section #filters ul {
-        margin-top: 30px;
-    }
-
-    section #filters #wrap {
-        margin-left: -40px;
-    }
-
-    section #filters ul i {
-        margin-top: -13px;
-        margin-left: -20px;
-        padding: 30px;
-        font-size: 23pt;
-    }
-
-    section #filters #two .fa-money-bill-wave {
-        padding-top: 35px;
-        padding-bottom: 35px;
-    }
-
-    section #filters #two .fa-child {
-        padding-left: 35px;
-        padding-right: 35px;
-    }
-
-    section #filters ul li {
-        width: max-content;
-        height: 70px;
-        margin-right: 40px;
-        font-size: 20pt;
-        border-left: none;
-    }
-
-    section #filters ul .list-item {
-        padding-bottom: 100px;
-    }
-
-    section .info {
-        font-size: 25pt;
-    }
-
-    section .info i {
-        padding: 20px;
-        padding-left: 30px;
-        padding-right: 30px;
-        font-size: 20pt;
-        border: 5px solid var(--grey);
-    }
-
-    section {
-        flex-direction: column;
-    }
-
-    main {
-        min-width: 1700px;
-        margin-left: 20px;
-    }
-
-    main #hebergements {
-        margin-top: -60px;
-        background-color: white;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    main #hebergements h3 {
-        font-size: 20pt;
-    }
-
-    main #hebergements .host {
-        margin-right: 30px;
-        padding: 7px;
-        justify-content: center;
-    }
-
-    main #hebergements .host img {
-        width: 620px;
-        height: 230px;
-    }
-
-    main #hebergements .host figcaption h5 {
-        font-size: 14pt;
-    }
-
-    main #hebergements .host figcaption .price, 
-    main #hebergements .host figcaption .price {
-        font-size: 12.5pt;
-    }
-
-    main #more {
-        font-size: 12pt;
-        margin-top: -10px;
-        margin-left: 30px;
-        margin-bottom: 40px;
-    }
-    
-    aside #most-popular-host {
-        margin-left: 50px;
-        display: flex;
-    }
-
-    aside #most-popular-host h3 {
-        width: 300px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    /*aside #most-popular-host figure {
-        margin-top: 200px;
-        margin-left: -1000000px;
-    } */
-
-    section article, footer div {
-        margin-left: 50px;
-    }
-
-    section article #activites {
-        flex-wrap: wrap;
-       justify-content: center;
-    }
-
-    section article #activites .activity {
-        margin-bottom: 10px;
-    }
-
-    section article #activites .double .activity #frioul, 
-    section article #activites .double .activity #notre-dame, 
-    section article #activites .double .activity #longchamp {
-        height: 145px;
-    }
-
-    section article #activites .activity img {
-        width: 300px;
-        height: 350px;
-    }
-
-    footer {
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    footer div {
-        margin-right: 0px;
-    }
-
-    footer div ul li {
-        width: 150%;
-    }
-
 }
