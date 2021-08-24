@@ -535,7 +535,7 @@ footer div {
 
     section, #hebergements {
         width: 100%;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     main {
@@ -548,6 +548,7 @@ footer div {
         margin-top: -20px;
         padding-top: 0px;
         background-color: white;
+        flex-direction: column;
         justify-content: center;
     }
 
@@ -559,6 +560,7 @@ footer div {
 
     main #hebergements h3 {
         margin-left: -10px;
+        margin-top: 50px;
     }
 
 
@@ -600,7 +602,8 @@ footer div {
     }
 
     main #more {
-        margin-top: 20px;
+        margin-top: -20px;
+        margin-bottom: 5px;
         font-size: 12pt;
     }
 
