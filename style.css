@@ -27,6 +27,7 @@ header img {
 }
 
 header nav {
+    display: flex;
     font-size: 11pt;
 }
 
@@ -41,6 +42,10 @@ header nav ul {
 nav ul li, footer ul li {
     margin-right: 30px;
     list-style-type: none;
+}
+
+nav #duo {
+    margin-right: -40px;
 }
 
 nav a, footer a {
@@ -169,19 +174,21 @@ nav a:hover, nav a:focus {
 
 section {
     display: flex;
+    justify-content: space-between;
 }
 
 main {
-flex: 2; 
-} 
+    width: 100%;
+    padding: 20px;
+    background-color: var(--grey);
+    border-radius: 20px;
+    flex-shrink: 3;
+}
 
 main #hebergements {
-    padding: 30px 20px 40px 20px;
-    margin-right: 100px;
+    padding-left: 10px;
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--grey);
-    border-radius: 15px;
 }
 
 main h5 {
@@ -197,6 +204,10 @@ main h3, main #more {
 
 main h3, aside h3, article h3 {
     width: 100%;
+}
+
+main #hebergements h3 {
+    margin-bottom: 15px;
 }
 
 main #hebergements img {
@@ -241,13 +252,9 @@ main .host .rating {
 }
 
 aside #most-popular-host {
-    width: 100%;
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-bottom: 50px;
-    margin-left: -60px;
-    margin-right: 60px;
-    flex: 1;
+    width: 80%;
+    padding: 20px 0 5px 20px;
+    margin: 0 60px 0 30px;
     background-color: var(--grey);
     border-radius: 15px;
 }
@@ -258,8 +265,8 @@ aside .flex-title {
     margin-right: 35px;
 }
 
-aside h3 {
-    margin-bottom: 30px;
+aside #most-popular-host .flex-title h3 {
+    margin-bottom: 15px;
 }
 
 aside h5 {
@@ -270,9 +277,7 @@ aside h5 {
 
 aside #most-popular-host .popular-host {
     width: 300px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 30px;
+    margin: 15px 10px 37px;
     padding-bottom: 5px;
 }
 
@@ -539,7 +544,9 @@ footer div {
     }
 
     main {
-        width: 90%;
+        width: 100%;
+        margin-bottom: 0px;
+        background: white;
         justify-content: center;
     }
 
@@ -547,7 +554,6 @@ footer div {
         margin-bottom: 0px;
         margin-top: -20px;
         padding-top: 0px;
-        background-color: white;
         flex-direction: column;
         justify-content: center;
     }
@@ -602,8 +608,8 @@ footer div {
     }
 
     main #more {
-        margin-top: -20px;
-        margin-bottom: 5px;
+        margin-top: 40px;
+        margin-bottom: 0px;
         font-size: 12pt;
     }
 
@@ -611,6 +617,10 @@ footer div {
         width: 100%;
         margin-top: -20px;
         margin-left: -20px;
+    }
+
+    aside .flex-title {
+        padding-top: 20px;
     }
 
     aside #most-popular-host {
@@ -660,11 +670,15 @@ footer div {
 
     aside #most-popular-host .popular-host figcaption .host-title .break {
         width: 350px;
-        font-size: 12pt;
+        font-size: 10pt;
     }
 
     aside .popular-host figcaption .rating {
         margin-top: 30px;
+    }
+
+    article {
+        margin-top: -30px;
     }
 
     article #activites {
@@ -913,4 +927,29 @@ footer div {
     footer div {
         margin-right: -25px;
     }
+}
+
+@media all and (min-width: 801px) and (max-width: 1000px) {
+    /* 
+       BASCULER HEBERGEMENTS SUR 2 LIGNES DE 3 ITEMS
+       LES PLUS POPULAIRES EN DESSOUS TELS QUELS
+       DANS DIV HEBERGEMENT RAJOUTER UNE WIDTH 100% ET UTILISER
+       FLEX WRAP
+    */
+
+    /*main #hebergements {
+        width: 100%;
+        flex-wrap: wrap;
+    } */
+    section {
+      flex-direction: column;
+    }  
+    
+    section #hebergements {
+      width: 100%;
+      margin-right: 20px;
+      padding-right: 0px;
+      flex-wrap: wrap;
+      justify-content: center;
+     }
 }
