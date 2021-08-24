@@ -253,7 +253,7 @@ main .host .rating {
 
 aside #most-popular-host {
     width: 80%;
-    padding: 20px 0 0 20px;
+    padding: 20px 0 5px 20px;
     margin: 0 60px 0 30px;
     background-color: var(--grey);
     border-radius: 15px;
@@ -277,7 +277,7 @@ aside h5 {
 
 aside #most-popular-host .popular-host {
     width: 300px;
-    margin: 15px 10px 20px;
+    margin: 15px 10px 37px;
     padding-bottom: 5px;
 }
 
@@ -397,7 +397,8 @@ footer div {
     }
 
     header {
-        min-width: 100%;
+        width: 100%;
+        margin-bottom: 0;
         display: flex;
         justify-content: end;
     }
@@ -409,9 +410,28 @@ footer div {
     }
 
     header nav {
-        min-width: 320px;
         font-size: 12pt;
-        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    header nav #duo {
+        min-width: 410px;
+        margin-top: 130px;
+        margin-left: -170px;
+        padding-bottom: 0px;
+        position: relative;
+        border-bottom: 3px solid var(--grey);
+    }
+
+    header nav #duo li {
+        padding-left: 70px;
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+
+    header nav #single {
+        margin-top: 80px;
+        margin-left: -97px;
     }
 
     header nav .blue {
@@ -422,14 +442,20 @@ footer div {
         margin-right: 5px;
     }
 
+    nav a:hover {
+        border-top: none;
+        border-bottom: 3px solid var(--blue);
+        padding-bottom: 10px;
+    }
+
     #sub-title  {
+        margin-top: 50px;
         justify-content: center;
     }
 
     #sub-title h2 {
         margin-bottom: 0px;
     }
-
 
     #sub-title h2 {
         width: 80%;
@@ -544,7 +570,7 @@ footer div {
     }
 
     main {
-        width: 100%;
+        width: 90%;
         margin-bottom: 0px;
         background: white;
         justify-content: center;
@@ -621,9 +647,11 @@ footer div {
 
     aside .flex-title {
         padding-top: 20px;
+        margin-right: 40px;
     }
 
     aside #most-popular-host {
+        width: 100%;
         margin-left: 0px;
         border-radius: 0;
     }
@@ -632,10 +660,6 @@ footer div {
     article h3 {
         margin-top: 0px;
         font-size: 14pt;
-    }
-
-    aside #most-popular-host h3 i {
-        margin-left: 290px;
     }
 
     aside #most-popular-host .popular-host {
@@ -652,11 +676,13 @@ footer div {
         margin-right: 20px;
     }
 
+    aside #most-popular-host figure img #blanc {
+        background: grey;
+    }
+
     aside #most-popular-host .popular-host figcaption h5 {
         width: 80%;
-        margin-top: 5px;
-        margin-left: -10px;
-        margin-bottom: 10px;
+        margin: 5px 0 10px -10px;
         padding-right: 20px;
         font-size: 14pt;
     }
@@ -821,13 +847,16 @@ footer div {
         margin-bottom: 10px;
     }
 
+    main {
+        background: white;
+        border-radius: 0;
+    }
+
     main #hebergements {
         width: 100%;
         padding: 0px;
         flex-wrap: wrap;
         justify-content: center;
-        border-radius: 0;
-        background-color: white;
     }
 
     main #hebergements .host {
