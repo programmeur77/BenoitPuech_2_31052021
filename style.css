@@ -253,7 +253,7 @@ main .host .rating {
 
 aside #most-popular-host {
     width: 80%;
-    padding: 20px 0 5px 20px;
+    padding: 20px 0 0 20px;
     margin: 0 60px 0 30px;
     background-color: var(--grey);
     border-radius: 15px;
