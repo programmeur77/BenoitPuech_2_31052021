@@ -704,40 +704,41 @@ footer div {
         margin-top: 30px;
     }
 
-    article {
+    #article {
         margin-top: -30px;
     }
 
-    article #activites {
+    #article #activites {
         width: 85%;
         flex-direction: column;
         justify-content: center;
     }
 
-    article h3 {
+    #article h3 {
         margin-left: 10px;
         font-size: 14pt;
     }
 
-    article #activites .activity {
+    #article #activites .activity {
         width: 100%;
         margin-left: 10px;
         margin-right: 35px;
         margin-bottom: 5px;
     }
 
-    article #activites .activity img, article #activites .activity #pomegues, article #activites .activity #notre-dame, 
-    article #activites .activity #frioul, article #activites .activity #longchamp {
+    #article #activites .activity img, #article #activites .activity #pomegues, 
+    #article #activites .activity #notre-dame, #article #activites .activity #frioul, 
+    #article #activites .activity #longchamp {
         width: 103%;
         height: 150px;
     }
 
-    article #activites .activity figcaption {
+    #article #activites .activity figcaption {
         width: 96%;
         padding: 12px;
     }
 
-    article #activites .activity figcaption h5 {
+    #article #activites .activity figcaption h5 {
         font-size: 12pt;
     }
 
@@ -918,27 +919,27 @@ footer div {
         align-content: space-around;
     }
 
-    section article {
+    section #article {
         width: 100%;
         margin-left: 10px;
     }
 
-    section article h3 {
+    section #article h3 {
         margin-bottom: 30px;
     }
 
-    section #activites {
+    section #article #activites {
         width: 100%;
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
 
-    section #activites .activity {
+    section #article #activites .activity {
         margin-right: 10px;
         margin-top: 0px;
     }
 
-    section #activites .activity figcaption h5 {
+    section #article #activites .activity figcaption h5 {
         font-size: 14px;
     }
 
@@ -965,12 +966,12 @@ footer div {
         margin-left: 10px;
     }
 
-    header, article #sub-title, article #search, article #filters, 
-    article .info {
+    header, section #first-section #sub-title, section #first-section #search, 
+    section #first-section #filters, section #first-section .info {
         margin-left: 10px;
     }
 
-    article #sub-title p, #search form input::placeholder, 
+    section #first-section article #sub-title p, #search form input::placeholder, 
     #search form #submit {
         font-size: 12pt;
     }
@@ -1104,16 +1105,16 @@ footer div {
         align-content: space-around;
     }
 
-    section article {
+    section #article {
         width: 100%;
         flex-wrap: wrap;
     }
 
-    section article #activites .activity {
+    section #article #activites .activity {
         margin-right: 20px;
     }
 
-    section article #activites .activity img {
+    section #article #activites .activity img {
         width: 230px;
     }
 
