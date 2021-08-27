@@ -1046,3 +1046,154 @@ footer div {
         margin-right: 0;
     }
 }
+
+@media all and (min-width: 1066px) and (max-width: 1137px) {
+    body {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    header, section #first-section #sub-title, section #first-section #search, 
+    section #first-section #filters, section #first-section .info {
+        margin-left: 10px;
+    }
+
+    section #first-section article #sub-title p, #search form input::placeholder, 
+    #search form #submit, #filters ul li, .info, 
+    aside .popular-host figcaption .price, 
+    aside .popular-host figcaption .rating {
+        font-size: 12pt;
+    }
+
+    #search form input[type=text] {
+        width: 250px;
+    }
+
+    #search form #submit {
+        padding: 15px;
+        padding-bottom: 17px;
+    }
+
+    #filters, #filters ul, section #main #hebergements, 
+    aside #most-popular-host, section #article, 
+    section #article #activites {
+        flex-wrap: wrap;
+    }
+
+    #filters h4, #main, section #main #hebergements,  
+    #main #hebergements a img, aside, aside #most-popular-host, 
+    section #article, section #article #activites, footer,
+    footer div h4 {
+        width: 100%
+    }
+
+    #filters h4, .info {
+        margin-bottom: 0;
+    }
+
+    #filters ul {
+        width: fit-content;
+    }
+
+    #filters ul li {
+        margin-bottom: 10px;
+        margin-right: 20px;
+    }
+
+    section, aside #most-popular-host {
+        flex-direction: row;
+    } 
+    
+    /*#main {
+        background: white;
+    } */
+    
+    /*section #main #hebergements {
+      margin-right: 20px;
+      padding-right: 20px;
+      justify-content: flex-start;
+     }*/
+
+     #main #hebergements .host {
+         width: 150px;
+         margin-left: 0px;
+     }
+
+     #main #hebergements .host img {
+         height: 80px;
+     }
+
+     #main #hebergements .host .host-title h5 {
+         font-size: 8pt;
+     }
+
+     #main #hebergements a .host-title .price, 
+     #main #hebergements a .host-title .rating {
+         font-size: 6pt;
+     }
+
+     aside #most-popular-host, section #article #activites {
+        justify-content: center;
+     }
+
+    aside #most-popular-host {
+        width: 80%;
+        margin: 0 60px 0 30px;
+        padding: 20px 20px 30px 0px;
+        border-radius: 15px;
+    }
+
+    aside .flex-title {
+        width: 100%;
+        margin-left: 50px;
+        margin-bottom: 30px;
+        justify-content: space-evenly;
+    }
+
+    aside .flex-title i {
+        margin-right: 100px;
+    }
+
+    aside #most-popular-host .popular-host {
+        width: 70%;
+        margin-left: 70px;
+        margin-bottom: 10px;
+    }
+    
+    aside #most-popular-host .popular-host img {
+        width: 100px;
+        height: 110px;
+        margin-right: 20px;
+        border-radius: 20px 0 0 20px;
+    }
+
+    aside .popular-host figcaption h5 {
+        margin-bottom: 5px;
+        font-size: 12pt;
+    }
+
+    aside .popular-host figcaption .price, 
+    aside .popular-host figcaption .rating {
+        font-size: 10pt;
+    }
+
+    aside .popular-host figcaption .rating {
+        margin-top: 20px;
+    }
+
+    aside .popular-host figcaption {
+        align-content: space-around;
+    }
+
+    section #article #activites .activity {
+        margin-right: 20px;
+    }
+
+    section #article #activites .activity img {
+        width: 330px;
+    }
+
+    footer div {
+        margin-right: 0;
+    }
+}
