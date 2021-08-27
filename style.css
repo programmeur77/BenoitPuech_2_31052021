@@ -13,10 +13,15 @@ body {
     font-family: var(--font);
 }
 
+header, header nav, header nav ul, #search, #filters, #filters ul,
+section, #main #hebergements, aside .flex-title, aside figure,
+#activites, footer {
+    display: flex;
+}
+
 header {
     height: 100px;
     margin-bottom: -50px;
-    display: flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -27,16 +32,12 @@ header img {
 }
 
 header nav {
-    display: flex;
     font-size: 11pt;
 }
 
-header .blue {
+header .blue, nav a:hover, nav a:focus, #filters i, .info i,
+.rating .blue {
     color: var(--blue);
-}
-
-header nav ul {
-    display: flex;
 }
 
 nav ul li, footer ul li {
@@ -48,19 +49,22 @@ nav #duo {
     margin-right: -40px;
 }
 
-nav a, footer a {
-    text-decoration: none;
+nav a, footer a, #search input::placeholder, #main a, aside a, 
+#activites a {
     color: black;
+}
+
+nav a, footer a, #main a, aside a, #activites a {
+    text-decoration: none;
 }
 
 nav a:hover, nav a:focus {
     border-top: 1px solid var(--blue);
     padding-top: 30px;
-    color: var(--blue);
 }
 
 #sub-title {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 #sub-title p {
@@ -70,130 +74,118 @@ nav a:hover, nav a:focus {
 
 #search {
     margin-top: 10px;
-    display: flex;
+}
+
+#search i, #main, aside #most-popular-host {
+    background: var(--grey);
 }
 
 #search i {
-    background-color: var(--grey);
+    margin-top: 3px;
     border-radius: 10px 0 0 10px;
     padding: 15px;
-    margin-top: 3px;
 }
 
 #search .fa-search {
     display: none;
 }
 
+#search #search-input, #filters ul li, .info i {
+    border: 2px solid var(--grey);
+}
+
 #search #search-input {
     padding: 16px;
     margin-top: 3px;
     margin-right: 0px;
-    border: 2px solid var(--grey);
     border-radius: 0;
 }
 
-#search input::placeholder {
+#search input::placeholder, #search #submit {
     font-family: var(--font);
+}
+
+#search input::placeholder, #search #submit, #filters ul li,
+.info, #main .host, aside .popular-host, 
+aside .popular-host .price, .activity figcaption h5, 
+footer ul li {
     font-size: 10pt;
-    color: black;
+}
+
+#search #submit, #filters ul li:hover {
+    background: var(--blue);
+}
+
+#search #submit, #filters ul li:hover {
+    color: white;
 }
 
 #search #submit {
+    margin-left: -5px;
     padding: 17px;
     padding-top: 17px;
-    margin-left: -5px;
     border: none;
     border-radius: 0 10px 10px 0;
-    background-color: var(--blue);
-    color: white;
-    font-size: 10pt;
-    font-family: var(--font);
 }
 
-#filters {
-    display: flex;
-    margin-top: 10px;
+#filters ul {
+    margin-top: 30px;
 }
 
 #filters h4 {
     align-self: center;
 }
 
-#filters ul {
-    display: flex;
-}
-
-#filters #wrap {
-    margin-left: -40px;
-}
-
 #filters ul li {
     height: 36px;
-    list-style-type: none;
+    margin: 0 30px 0 10px;
     padding-right: 20px;
-    margin-left: 10px;
-    margin-right: 30px;
-    border: 2px solid var(--grey);
+    list-style-type: none;
+    cursor: pointer;
     border-left: none;
     border-radius: 0 50px 50px 0;
-    font-size: 10pt;
-    transition: background-color 0.4s ease;
-}
-
-#filters ul li:hover {
-    background: var(--blue);
-    color: white;
+    transition: background 0.4s ease;
 }
 
 #filters i {
+    margin: -4px 10px 0 -15px;
     padding: 15px;
-    margin-top: -4px;
-    margin-right: 10px;
-    margin-left: -15px;
-    color: var(--blue);
-    background-color: var(--clearBlue);
+    background: var(--clearBlue);
     font-size: 15px;
     border-radius: 50%;
 }
 
 .info {
     margin-top: 20px;
-    font-size: 10pt;
 }
 
 .info i {
-    padding: 10px;
-    padding-left: 12px;
-    padding-right: 12px;
-    color: var(--blue);
-    font-size: 8pt;
-    border: 2px solid var(--grey);
-    border-radius: 100%;
     margin-right: 10px;
+    padding: 10px 12px;
+    font-size: 8pt;
+    border-radius: 100%;
 }
 
 section {
-    display: flex;
     justify-content: space-between;
 }
 
-#main {
+#main, #main h3, aside h3, article h3, #activites {
     width: 100%;
+}
+
+#main {
     padding: 20px;
-    background-color: var(--grey);
     border-radius: 20px;
-    flex-shrink: 3;
 }
 
 #main #hebergements {
     padding-left: 10px;
-    display: flex;
     flex-wrap: wrap;
 }
 
 #main h5 {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 5px 0;
     padding-left: 10px;
     font-size: 12pt;
 }
@@ -202,37 +194,31 @@ section {
     margin-left: 15px;
 }
 
-#main h3, aside h3, article h3 {
-    width: 100%;
-}
-
 #main #hebergements h3 {
     margin-bottom: 15px;
+}
+
+#main #hebergements img, 
+aside #most-popular-host .popular-host img, #activites img {
+    object-fit: cover;
 }
 
 #main #hebergements img {
     width: 230px;
     height: 100px;
-    object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
-#main .host, aside .popular-host {
+#main .host, aside .popular-host, .activity figcaption {
     padding: 5px 5px 10px 5px;
-    background-color: white;
     border-radius: 20px;
+    background: white;
     box-shadow: 0px 5px 5px silver;
-    font-size: 10pt;
 }
 
 #main .host {
     margin-right: 17px;
     margin-left: 10px;
-}
-
-#main a, aside a, #activites a {
-    text-decoration: none;
-    color: black;
 }
 
 #main .host .price, #main .host .rating {
@@ -247,31 +233,24 @@ section {
     color: var(--grey);
 }
 
-.rating .blue {
-    color: var(--blue);
-}
-
 aside #most-popular-host {
     width: 80%;
-    padding: 20px 0 5px 20px;
     margin: 0 60px 0 30px;
-    background-color: var(--grey);
+    padding: 20px 0 5px 20px;
     border-radius: 15px;
 }
 
 aside .flex-title {
-    display: flex;
-    align-items: baseline;
     margin-right: 35px;
+    align-items: baseline;
 }
 
-aside #most-popular-host .flex-title h3 {
+aside #most-popular-host .flex-title h3, aside h5 {
     margin-bottom: 15px;
 }
 
 aside h5 {
     margin-top: 10px;
-    margin-bottom: 15px;
     font-size: 11pt;
 }
 
@@ -285,12 +264,7 @@ aside #most-popular-host .popular-host img {
     width: 100px;
     height: 110px;
     margin-right: 20px;
-    object-fit: cover;
     border-radius: 20px 0 0 20px;
-}
-
-aside figure {
-    display: flex;
 }
 
 aside .popular-host figcaption {
@@ -299,7 +273,6 @@ aside .popular-host figcaption {
 
 aside .popular-host .price {
     margin-top: -10px;
-    font-size: 10pt;
 }
 
 aside .popular-host .rating {
@@ -311,13 +284,8 @@ section {
     margin-top: 30px;
 }
 
-section h3 {
+section h3, .activity figcaption h5 {
     margin-bottom: 0;
-}
-
-#activites {
-    width: 100%;
-    display: flex;
 }
 
 #activites img {
@@ -332,7 +300,6 @@ section h3 {
 #activites .activity img {
     width: 284px;
     height: 330px;
-    object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
@@ -354,24 +321,18 @@ section h3 {
 
 .activity figcaption {
     padding: 10px;
-    background-color: white;
-    box-shadow: 0px 5px 5px silver;
     border-radius: 0 0 20px 20px;
 }
 
 .activity figcaption h5 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 10pt;
+    margin-top: 0;
 }
 
 footer {
-    width: 1395px;
+    width: 107%;
     padding: 30px;
     margin-right: 40px;
     margin-left: -70px;
-    background-color: var(--grey);
-    display: flex;
     justify-content: flex-start;
 }
 
@@ -382,7 +343,6 @@ footer h4, footer ul {
 footer ul li {
     margin-left: -40px;
     padding-top: 10px;
-    font-size: 10pt;
 }
 
 footer div {
@@ -396,8 +356,17 @@ footer div {
         font-size: 12pt;
     }
 
-    header {
+    header, #sub-title p, #search, .info, section, #hebergements,
+    #main #hebergements img, article #activites .activity img, 
+    article #activites .activity #pomegues, 
+    article #activites .activity #notre-dame, 
+    article #activites .activity #longchamp, aside, 
+    aside #most-popular-host, #article #activites .activity,
+    footer {
         width: 100%;
+    }
+
+    header {
         margin-bottom: 0;
         display: flex;
         justify-content: end;
@@ -409,8 +378,16 @@ footer div {
         margin-left: 5px;
     }
 
-    header nav {
+    header nav, #sub-title p,  #search .fa-map-marker-alt, 
+    #search .fa-search, #search #search-input::placeholder,
+    #filters ul li, .info, .info i, #main #more, #main .host, 
+    #main .price, aside .popular-host figcaption .price,  
+    #main .rating, aside .popular-host figcaption .price, 
+    aside .popular-host .rating {
         font-size: 12pt;
+    }
+
+    header nav {
         justify-content: space-between;
     }
 
@@ -424,9 +401,7 @@ footer div {
     }
 
     header nav #duo li {
-        padding-left: 70px;
-        padding-top: 0px;
-        padding-bottom: 10px;
+        padding: 0 0 10px 70px;
     }
 
     header nav #single {
@@ -448,9 +423,12 @@ footer div {
         padding-bottom: 10px;
     }
 
-    #sub-title  {
-        margin-top: 50px;
+    #sub-title, #main, #main #hebergements {
         justify-content: center;
+    }
+
+    #sub-title {
+        margin-top: 50px;
     }
 
     #sub-title h2 {
@@ -465,48 +443,42 @@ footer div {
     }
 
     #sub-title p {
-        width: 100%;
         margin-left: 10px;
         margin-top: 10px;
-        font-size: 12pt;
     }
 
     #search {
-        width: 100%;
         margin-left: 10px;
         margin-top: 5px;
     }
 
     #search .fa-map-marker-alt, #search .fa-search {
-        font-size: 12pt;
+        padding: 20px;
     }
 
     #search .fa-map-marker-alt {
-        padding: 20px;
         padding-top: 20px;
     }
 
     #search .fa-search {
         display: inline;
         margin-left: -30px;
-        padding: 20px;
         padding-top: 22px;
         padding-bottom: 12px;
-        background-color: var(--blue);
+        background: var(--blue);
         border-radius: 15px;
         color: white;
     }
 
     #search #search-input {
         width: 195px;
+        margin-right: 0;
         padding: 20px;
-        margin-right: 0px;
         border: 2px solid var(--grey);
         border-radius: 0;
     }
 
     #search #search-input::placeholder {
-        font-size: 12pt;
         padding-left: 5px;
     }
 
@@ -514,81 +486,82 @@ footer div {
         display: none;
     }
 
-    #filters {
-        min-width: 320px;
-        margin-left: 10px;
+    #filters, #filters ul {
         flex-wrap: wrap;
+    }
+
+    #filters {
+        width: 320px;
+        margin-left: 10px;
+    }
+
+    #filters h4, #filters i, #main #hebergements h3, aside h3, 
+    aside #most-popular-host h3 i, article h3, 
+    #main .host figcaption h5, aside #most-popular-host h3, 
+    aside #most-popular-host h3 i,
+    article h3, aside #most-popular-host .popular-host figcaption h5  {
+        font-size: 14pt;
+
     }
 
     #filters h4 {
         margin-bottom: 20px;
-        font-size: 14pt;
     }
 
     #filters ul {
         margin-top: -10px;
         margin-left: -30px;
-        flex-wrap: wrap;
     }
 
     #filters ul li {
         width: fit-content;
         margin-bottom: 10px;
         margin-right: 13px;
-        padding-right: 10px;
         padding-bottom: 5px;
-        font-size: 12pt;
+        padding-right: 10px;
     }
 
     #filters i {
-        padding: 15px;
-        font-size: 14pt;
-        margin-right: 10px;
         margin-bottom: 10px;
+        margin-right: 10px;
+        padding: 15px;
     }
 
     .info {
-        width: 100%;
-        margin-top: -5px;
-        margin-left: 10px;
-        margin-right: 5px;
-        margin-bottom: 0px;
-        font-size: 12pt;
+        margin: -5px 5px 0 10px
     }
 
     .info i {
         margin-right: 5px;
-        padding: 10px;
-        padding-left: 15px;
-        padding-right: 15px;
-        font-size: 12pt;
+        padding: 10px 15px;
     }
 
     section, #hebergements {
-        width: 100%;
         flex-direction: column-reverse;
     }
 
     #main {
         width: 90%;
-        margin-bottom: 0px;
+        margin-bottom: 0;
+    }
+
+    #main, #main .host, aside .popular-host {
         background: white;
-        justify-content: center;
+    }
+
+    #main #hebergements, #main .host figcaption, 
+    #article #activites {
+        flex-direction: column;
     }
 
     #main #hebergements {
-        margin-bottom: 0px;
-        margin-top: -20px;
-        margin-left: -10px;
-        padding-top: 0px;
-        flex-direction: column;
-        justify-content: center;
+        margin: -20px 0 -10px 0;
+        padding-top: 0;
     }
 
     #main #hebergements h3, aside h3, aside #most-popular-host h3 i, article h3 {
         margin-bottom: 5px;
         margin-left: 10px;
-        font-size: 14pt;
     }
 
     #main #hebergements h3 {
@@ -599,21 +572,21 @@ footer div {
 
     #main #hebergements img, article #activites .activity img, article #activites .activity #pomegues,
     article #activites .activity #notre-dame, article #activites .activity #longchamp {
-        width: 100%;
         height: 95px;
         object-fit: cover;
     }
 
-    #main #hebergements .host {
-        width: 95%;
-        margin-left: -10px;
-        margin-right: 10px;
-        margin-bottom: 5px;
+    #main #hebergements .host, #article #activites {
+
         justify-content: center;
     }
 
+    #main #hebergements .host {
+        width: 95%;
+        margin: 0 10px 5px -10px;
+    }
+
     #main .host figcaption {
-        flex-direction: column;
         align-items: flex-start;
     }
 
@@ -621,27 +594,22 @@ footer div {
         margin-left: 0px;
         margin-bottom: 5px;
         padding-top: 5px;
-        font-size: 14pt;
     }
 
     #main .host, #main .price, aside .popular-host figcaption .price {
         padding-top: 5px;
-        font-size: 12pt;
     }
 
     #main .rating {
         margin-top: -15px;
-        font-size: 12pt;
     }
 
     #main #more {
         margin-top: 40px;
-        margin-bottom: 0px;
-        font-size: 12pt;
+        margin-bottom: 0;
     }
 
     aside {
-        width: 100%;
         margin-top: -20px;
         margin-left: -20px;
     }
@@ -652,15 +620,13 @@ footer div {
     }
 
     aside #most-popular-host {
-        width: 100%;
-        margin-left: 0px;
+        margin-left: 0;
         border-radius: 0;
     }
 
     aside #most-popular-host h3, aside #most-popular-host h3 i,
     article h3 {
-        margin-top: 0px;
-        font-size: 14pt;
+        margin-top: 0;
     }
 
     aside #most-popular-host .popular-host {
@@ -677,22 +643,20 @@ footer div {
         margin-right: 20px;
     }
 
-    aside #most-popular-host figure img #blanc {
-        background: grey;
+    aside #most-popular-host figure img #blanc, footer {
+        background: var(--grey);
     }
 
     aside #most-popular-host .popular-host figcaption h5 {
         width: 80%;
         margin: 5px 0 10px -10px;
         padding-right: 20px;
-        font-size: 14pt;
     }
 
     aside .popular-host figcaption .price, aside .popular-host .rating {
         width: 200px;
         margin-left: -10px;
         margin-right: -10px;
-        font-size: 12pt;
     }
 
     aside #most-popular-host .popular-host figcaption .host-title .break {
@@ -710,20 +674,14 @@ footer div {
 
     #article #activites {
         width: 85%;
-        flex-direction: column;
-        justify-content: center;
     }
 
     #article h3 {
         margin-left: 10px;
-        font-size: 14pt;
     }
 
     #article #activites .activity {
-        width: 100%;
-        margin-left: 10px;
-        margin-right: 35px;
-        margin-bottom: 5px;
+        margin: 10px 35px 5px 10px;
     }
 
     #article #activites .activity img, #article #activites .activity #pomegues, 
@@ -738,12 +696,8 @@ footer div {
         padding: 12px;
     }
 
-    #article #activites .activity figcaption h5 {
-        font-size: 12pt;
-    }
 
     footer {
-        width: 100%;
         margin-top: 30px;
         padding-bottom: 5px;
         flex-direction: column-reverse;
@@ -794,26 +748,36 @@ footer div {
         padding: 20px;
     }
 
-    #search #submit {
-        padding: 19px;
-        padding-bottom: 20px;
+    #search #submit, .info i, aside .popular-host figcaption .price, 
+    aside .popular-host figcaption .rating {
         font-size: 12pt;
     }
 
-    #filters {
+    #search #submit {
+        padding: 19px;
+        padding-bottom: 20px;
+    }
+
+    #filters, #filters ul, aside #most-popular-host, 
+    section #article #activites, footer {
         flex-wrap: wrap;
+    }
+
+    #filters h4, .info, aside .popular-host figcaption h5 {
+        font-size: 14pt;
+    }
+
+    #filters h4, .info {
+        margin-bottom: 0;
     }
 
     #filters h4 {
         width: 400px;
-        font-size: 14pt;
-        margin-bottom: 0px;
     }
 
     #filters ul {
         margin-top: 5px;
         margin-left: -20px;
-        flex-wrap: wrap;
     }
 
     #filters ul li {
@@ -828,19 +792,13 @@ footer div {
         padding: 20px;
     }
 
-    .info {
-        margin-bottom: 0px;
-        font-size: 14pt;
-    }
-
     .info i {
         padding: 15px;
         padding-left: 20px;
         padding-right: 20px;
-        font-size: 12pt
     }
 
-    section {
+    section, aside #most-popular-host {
         flex-direction: column;
     }
 
@@ -854,30 +812,22 @@ footer div {
         border-radius: 0;
     }
 
-    #main #hebergements {
+    #main #hebergements, #main #hebergements .host img, 
+    aside #most-popular-host, section #article, 
+    section #article #activites, footer {
         width: 100%;
-        padding: 0px;
-        flex-wrap: wrap;
-        justify-content: center;
     }
 
     #main #hebergements .host {
         width: 260px;
     }
 
-    #main #hebergements .host img {
-        width: 100%;
-    }
-
     aside #most-popular-host {
-        width: 100%;
         margin: auto;
+        margin-left: 0;
         padding: 0;
         padding-bottom: 40px;
-        margin-left: 0px;
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
         border-radius: 0;
     }
 
@@ -903,12 +853,6 @@ footer div {
 
     aside .popular-host figcaption h5 {
         margin-bottom: 5px;
-        font-size: 14pt;
-    }
-
-    aside .popular-host figcaption .price, 
-    aside .popular-host figcaption .rating {
-        font-size: 12pt;
     }
 
     aside .popular-host figcaption .rating {
@@ -920,7 +864,6 @@ footer div {
     }
 
     section #article {
-        width: 100%;
         margin-left: 10px;
     }
 
@@ -929,14 +872,12 @@ footer div {
     }
 
     section #article #activites {
-        width: 100%;
-        flex-wrap: wrap;
         justify-content: space-evenly;
     }
 
     section #article #activites .activity {
         margin-right: 10px;
-        margin-top: 0px;
+        margin-top: 0;
     }
 
     section #article #activites .activity figcaption h5 {
@@ -944,9 +885,7 @@ footer div {
     }
 
     footer {
-        width: 100%;
-        padding-bottom: 0px;
-        flex-wrap: wrap;
+        padding-bottom: 0;
         justify-content: space-between;
         
     }
@@ -972,7 +911,9 @@ footer div {
     }
 
     section #first-section article #sub-title p, #search form input::placeholder, 
-    #search form #submit {
+    #search form #submit, #filters ul li, .info, 
+    aside .popular-host figcaption .price, 
+    aside .popular-host figcaption .rating {
         font-size: 12pt;
     }
 
@@ -985,57 +926,51 @@ footer div {
         padding-bottom: 17px;
     }
 
-    #filters {
+    #filters, #filters ul, section #main #hebergements, 
+    aside #most-popular-host, section #article, 
+    section #article #activites {
         flex-wrap: wrap;
     }
 
-    #filters h4 {
-        width: 100%;
-        margin-bottom: 0px;
+    #filters h4, #main, section #main #hebergements,  
+    #main #hebergements a img, aside, aside #most-popular-host, 
+    section #article, section #article #activites, footer,
+    footer div h4 {
+        width: 100%
+    }
+
+    #filters h4, .info {
+        margin-bottom: 0;
     }
 
     #filters ul {
         width: fit-content;
-        flex-wrap: wrap;
     }
 
     #filters ul li {
         margin-bottom: 10px;
         margin-right: 20px;
-        font-size: 12pt;
     }
 
-    .info {
-        margin-bottom: 0px;
-        font-size: 12pt;
-    }
-
-    section {
+    section, aside #most-popular-host {
         flex-direction: column;
     } 
     
     #main {
-        width: 100%;
         background: white;
     }
     
     section #main #hebergements {
-      width: 100%;
       margin-left: -30px;
       margin-right: 20px;
       padding-right: 20px;
-      flex-wrap: wrap;
       justify-content: flex-start;
      }
 
      #main #hebergements .host {
          width: 240px;
-         margin-left: 0px;
+         margin-left: 0;
      }
-
-     #main #hebergements a img {
-        width: 100%;
-    }
 
      #main #hebergements .host .host-title h5 {
          font-size: 10pt;
@@ -1047,19 +982,18 @@ footer div {
      }
 
      aside {
-         width: 100%;
          margin-left: -40px;
      }
 
-     aside #most-popular-host {
-        width: 100%;
-        padding: 0;
-        padding-bottom: 40px;
-        margin-left: 0px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+     aside #most-popular-host, section #article #activites {
         justify-content: center;
+     }
+
+     aside #most-popular-host {
+        padding: 0;
+        margin-left: 0;
+        padding-bottom: 40px;
+        display: flex;
         border-radius: 0;
     }
 
@@ -1092,11 +1026,6 @@ footer div {
         font-size: 14pt;
     }
 
-    aside .popular-host figcaption .price, 
-    aside .popular-host figcaption .rating {
-        font-size: 12pt;
-    }
-
     aside .popular-host figcaption .rating {
         margin-top: 50px;
     }
@@ -1104,18 +1033,7 @@ footer div {
     aside .popular-host figcaption {
         align-content: space-around;
     }
-
-    section #article {
-        width: 100%;
-        flex-wrap: wrap;
-    }
-
-    section #article #activites {
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
+    
     section #article #activites .activity {
         margin-right: 20px;
     }
@@ -1124,15 +1042,7 @@ footer div {
         width: 330px;
     }
 
-    footer {
-        width: 100%;
-    }
-
     footer div {
-        margin-right: 0px;
-    }
-
-    footer div h4 {
-        width: 100%;
+        margin-right: 0;
     }
 }
