@@ -960,7 +960,7 @@ footer div {
     }
 }
 
-@media all and (min-width: 801px) and (max-width: 1067px) {
+@media all and (min-width: 801px) and (max-width: 1065px) {
     body {
         width: 100%;
         margin-left: 10px;
@@ -1110,12 +1110,18 @@ footer div {
         flex-wrap: wrap;
     }
 
+    section #article #activites {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     section #article #activites .activity {
         margin-right: 20px;
     }
 
     section #article #activites .activity img {
-        width: 230px;
+        width: 330px;
     }
 
     footer {
@@ -1123,6 +1129,10 @@ footer div {
     }
 
     footer div {
-        margin-right: 100px;
+        margin-right: 0px;
+    }
+
+    footer div h4 {
+        width: 100%;
     }
 }
